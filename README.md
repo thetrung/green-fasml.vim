@@ -1,30 +1,21 @@
-# Flat Assembler support for vim
+# Green Ocean on Fasm + Ocaml
 
-Has syntax, compiler, indent support.
+Has syntax, compiler, indent & theme support on Neovim.
 
 ## Set Flat Assembler syntax by default for `*.asm` files
 
-Add following to your `.vimrc`:
+Add following to your `autocmds.lua` or `init.lua` on NeoVim :
 
 ```
 autocmd BufReadPre *.asm let g:asmsyntax = "fasm"
 ```
-
-## Improvements to the original works:
-
-* All files are useable on Linux
-* Update to modern CPUs (AVX-512 registers)
-
+ 
 ## Based on:
 
-### syntax:
+### fasm support :
 
-https://github.com/RIscRIpt/vim-fasm-syntax
+https://github.com/fedorenchik/fasm.vim
 
-### compiler:
+### colorscheme :
 
-https://www.vim.org/scripts/script.php?script_id=1073
-
-### indent:
-
-https://github.com/vim-scripts/fasm.vim
+https://github.com/thetrung/green-fasm.vim
