@@ -2,12 +2,20 @@
 
 Has syntax, compiler, indent & theme support on Neovim.
 
-## Set Flat Assembler syntax by default for `*.asm` files
+### Set Flat Assembler syntax by default for `*.asm` files
 
 Add following to your `autocmds.lua` or `init.lua` on NeoVim :
 
 ```
 autocmd BufReadPre *.asm let g:asmsyntax = "fasm"
+```
+
+### Config as Default 
+this usually need on `Arch/Omarchy` where `colorscheme` is synced by theme, add this to your `init.lua` :
+```
+    vim.defer_fn(function()
+      vim.cmd("colorscheme green-ocean")
+    end, 50)
 ```
  
 ## Based on:
