@@ -1,6 +1,8 @@
 # Green Ocean on Fasm + Ocaml
-
 Has syntax, compiler, indent & theme support on Neovim.
+
+### Preview 
+![alt](https://github.com/thetrung/green-ocean.vim/blob/main/preview.png)
 
 ### Set Flat Assembler syntax by default for `*.asm` files
 
