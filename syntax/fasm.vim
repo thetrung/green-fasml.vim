@@ -15,6 +15,7 @@ endif
 let s:cpo_save = &cpo
 set cpo&vim
 
+setlocal commentstring=;\ %s
 setlocal iskeyword=a-z,A-Z,48-57,.,_
 setlocal isident=a-z,A-Z,48-57,.,_
 
