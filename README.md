@@ -12,6 +12,14 @@ Add following to your `autocmds.lua` or `init.lua` on NeoVim :
 autocmd BufReadPre *.asm let g:asmsyntax = "fasm"
 ```
 
+### Create `green-fasml.lua` in `../plugins`
+
+```
+return {
+  "thetrung/green-fasml.vim",
+}
+```
+
 ### Config as Default 
 this usually need on `Arch/Omarchy` where `colorscheme` is synced by theme, add this to your `init.lua` :
 ```
