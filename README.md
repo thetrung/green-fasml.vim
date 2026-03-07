@@ -4,17 +4,16 @@ Has syntax, compiler, indent & theme support on Neovim.
 ### Preview 
 ![alt](https://github.com/thetrung/green-ocean.vim/blob/main/preview.png)
 
-### Set Flat Assembler syntax by default for `*.asm` files
-
-Add following to your `autocmds.lua` or `init.lua` on NeoVim :
-
+### Create `green-fasml.lua` in neovim configs in `../plugins`
+* this also Set `*.asm` & `*.inc` for FASM.
+  
 ```
-autocmd BufReadPre *.asm let g:asmsyntax = "fasm"
-```
-
-### Create `green-fasml.lua` in `../plugins`
-
-```
+vim.filetype.add({
+  extension = {
+    asm = "fasm",
+    inc = "fasm",
+  },
+})
 return {
   "thetrung/green-fasml.vim",
 }
